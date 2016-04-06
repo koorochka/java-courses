@@ -19,6 +19,36 @@ public class Calculator {
 	}
 
 	/**
+	  * Суммируем аргументы
+	  * @paramm params - аргументы суммирования
+	  */
+	public void deduct(int ... params){
+		for(Integer param : params){
+			this.result -= param;
+		}
+	}
+
+	/**
+	  * Суммируем аргументы
+	  * @paramm params - аргументы суммирования
+	  */
+	public void lev(int ... params){
+		for(Integer param : params){
+			this.result *= param;
+		}
+	}
+
+	/**
+	  * Суммируем аргументы
+	  * @paramm params - аргументы суммирования
+	  */
+	public void del(int ... params){
+		for(Integer param : params){
+			this.result /= param;
+		}
+	}
+
+	/**
 	  * Get Result
 	  * @return результат вычисления
 	  */
